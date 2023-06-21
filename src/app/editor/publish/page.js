@@ -1,5 +1,4 @@
 import AddGame from "@/components/GameForm";
-
 export default function Publish() {
     return (
         <div className="my-0 p-4 sm:ml-64">
