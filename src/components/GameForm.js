@@ -123,15 +123,19 @@ export default function AddGame() {
             </div>
 
             <div className="col-span-2 ">
-              <input
-                class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
-                placeholder="Search for anything..."
-                type="text"
-                name="search"
-              />
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              ></label>
+              <textarea
+                id="message"
+                rows="4"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="តើបាល់នេះមានចំនួនប៉ុន្មាន?"
+              ></textarea>
             </div>
             <div className=" col-start-1">
-              <div class="flex items-center justify-center w-full mt-10">
+              <div class="flex items-center justify-center w-64 h-64 rounded mt-10">
                 <label
                   for="dropzone-file"
                   class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
@@ -139,7 +143,7 @@ export default function AddGame() {
                   <div class="flex flex-col items-center justify-center pt-5 pb-6">
                     <svg
                       aria-hidden="true"
-                      class="w-10 h-10 mb-3 text-gray-400"
+                      class="w-4 h-4 mb-3 text-gray-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -157,12 +161,37 @@ export default function AddGame() {
                       and drop
                     </p>
                     <p class="text-xs text-gray-500 dark:text-gray-400">
-                      SVG, PNG, JPG or GIF (MAX. 800x400px)
+                      SVG, PNG, JPG or GIF (MAX. 225x225px)
                     </p>
                   </div>
                   <input id="dropzone-file" type="file" class="hidden" />
                 </label>
               </div>
+            </div>
+            <div className=" col-start-3">
+              <button
+                type="button"
+                class="block w-full  text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Draft
+              </button>
+              <button type="button" class="block w-full  text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Preview</button>
+            </div>
+            <div className="col-span-2 ">
+            <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">បញ្ចូលចម្លើយ +</button>
+            <button class="block-inline items-center justify-center w-40 h-10 rounded mt-10">
+                <label
+                  for="dropzone-file"
+                  class="flex flex-col items-center justify-center w-30 h-10 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                >
+                  <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                    <p class="text-xs text-gray-500 dark:text-gray-400">
+                      Input an audio
+                    </p>
+                  </div>
+                  <input id="dropzone-file" type="file" class="hidden" />
+                </label>
+              </button>
             </div>
           </div>
         </div>
