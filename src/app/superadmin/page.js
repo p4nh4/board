@@ -11,7 +11,7 @@ export default function SuperAdmin() {
           <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg">
             <TableData/>
           </div>
-          <div className="grid grid-cols-2 gap-4 mb-2">
+          <div className="mt-10 grid grid-cols-2 gap-4 mb-2">
             <GameTable/>
             <ScoreTable/>
           </div>

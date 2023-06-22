@@ -5,10 +5,10 @@ export default function GameData() {
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 ">
                                 Class
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 ">
                                 Subject
                             </th>
                             <th scope="col" class="px-6 py-3">
@@ -20,13 +20,9 @@ export default function GameData() {
                     </thead>
                     <tbody>
                         <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                            <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                                <img class="w-10 h-10 rounded-full" src="../assets/img/team-2.jpg" alt="Jese image" />
-                                <div class="pl-3">
-                                    <div class="text-base font-semibold">Neil Sims</div>
-                                    
-                                </div>
-                            </th>
+                        <td class="px-6 py-4 font-medium text-gray-800">
+                                #class
+                            </td>
                             <td class="px-6 py-4">
                                 #subject
                             </td>
